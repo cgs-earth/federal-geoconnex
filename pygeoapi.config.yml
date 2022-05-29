@@ -87,7 +87,7 @@ resources:
         description: Census Block Groups (from ESRI REST service source)
         keywords:
             - census block group
-        template: jsonld/hydrologic-location.jsonld
+#        template: jsonld/hydrologic-location.jsonld
         links:
             - type: application/html
               rel: canonical
