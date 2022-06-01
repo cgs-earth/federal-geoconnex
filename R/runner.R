@@ -22,7 +22,7 @@ url <- "https://federal-geoconnex-eaxlzxprna-uc.a.run.app/collections"
 c <- jsonlite::fromJSON(url)$collections
 c$name <- gsub("/","-",c$id)
 
-for(i in 6:length(c$id)) {
+for(i in 11:length(c$id)) {
   u <- paste0(url,"/",c$id[i],"/items")
   data <- get_oaf(u,2000)
   sf::write_sf(data,paste0("../out/",c$name[i],".geojson"))

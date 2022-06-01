@@ -256,7 +256,7 @@ resources:
             - type: feature
               name: ESRI
               data: https://watersgeo.epa.gov/arcgis/rest/services/OWRAD_NP21/ALL_OWRAD_NP21/MapServer/9
-              id_field: PERMANENT_IDENTIFIER
+              id_field: SOURCE_FEATUREID
     epa/cwns/point:
         type: collection
         title: EPA CWNS (points)
